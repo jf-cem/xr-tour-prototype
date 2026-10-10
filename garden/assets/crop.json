@@ -1,0 +1,48 @@
+{
+  "sourceCount": 4000000,
+  "protectedRegionsWorld": [
+    {
+      "name": "garden_strip",
+      "min": [
+        -415,
+        -1,
+        -5.8
+      ],
+      "max": [
+        355,
+        4.5,
+        7.4
+      ]
+    },
+    {
+      "name": "tree_canopies",
+      "min": [
+        -415,
+        4.0,
+        -9.0
+      ],
+      "max": [
+        355,
+        24.0,
+        11.0
+      ]
+    }
+  ],
+  "retained": 2675760,
+  "removed": 1324240,
+  "removedPercent": 33.11,
+  "carRemoval": "Geometric parking strip removal; no semantic object segmentation",
+  "extentGuard": "3 times maximum Gaussian scale",
+  "retainedBeyondP03": 50802,
+  "sourceSha256": "1f2a2004880ccc62e8a54f5ed63e7ef872f96f46967c44c8a218cf870fe02221",
+  "shBands": 3,
+  "pixelIdentityVerified": {
+    "means_l.webp": true,
+    "means_u.webp": true,
+    "quats.webp": true,
+    "scales.webp": true,
+    "sh0.webp": true,
+    "shN_labels.webp": true
+  },
+  "bytes": 37789044
+}

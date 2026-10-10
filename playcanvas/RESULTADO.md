@@ -14,7 +14,9 @@ O modo padrão tenta WebGPU com o pipeline automático (ordenação GPU/raster),
 
 Chromium headless, viewport e buffer 1100×800, resolução 1×, mesma cena, FOV 65°, altura 3 m, origem P01. GPU reportada pelo browser: Intel UHD Graphics via ANGLE/D3D11. Depois da inicialização e cinco segundos de aquecimento, dez segundos de movimento e rotação programados, com contextos isolados e sequenciais:
 
-| Motor | Inicialização local | FPS médios no movimento | p95 de intervalo de frame |
+**Correção de 10 de outubro:** a parte Spark desta comparação foi invalidada por uma rotação programada com quaternion NaN. Os números comparativos 13,48 e 9,06 FPS da tabela foram retirados; não sustentam uma comparação justa dos motores. As capturas iniciais e os testes de carregamento PlayCanvas permanecem válidos. Os ensaios estáticos WebGPU abaixo não usaram essa rotação inválida.
+
+Inicialização local | FPS médios no movimento | p95 de intervalo de frame |
 | --- | ---: | ---: | ---: |
 | Spark original, WebGL2 | 5,36 s | 13,48 | 75,8 ms |
 | PlayCanvas original, WebGL2 | 1,13 s | 9,06 | 275 ms |

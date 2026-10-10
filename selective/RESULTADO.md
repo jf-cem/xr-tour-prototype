@@ -10,21 +10,13 @@ O SOG protegido (13 191 991 bytes) mantém exatamente os códigos/pixels origina
 
 Os assets novos totalizam cerca de 111 MB no repositório; o fundo é paginado e não se deve interpretar esse total como download inicial. Não foi obtida uma medida completa e fiável de download inicial: Resource Timing omite parte dos pedidos de workers e não serve para essa conclusão.
 
-## Comparação
+## Correção da validação
 
-Chromium headless na Intel UHD Graphics, 1100×800, framebuffer 1×, FOV 65°, mesma posição e vista P01, contextos sequenciais isolados. Dez segundos de aquecimento, seguidos por dez segundos de rotação ±20° e deslocação programadas.
+A comparação de FPS publicada em zone01 foi invalidada: o teste multiplicava um quaternion Three.js por um objeto simples, produzindo componentes NaN durante o movimento programado. As capturas iniciais, anteriores ao movimento, permanecem válidas. As contagens de splats, partição e verificação de identidade dos pixels permanecem válidas.
 
-| Perfil | FPS médios em movimento | p95 de intervalo de frame | Splats ativos ao terminar |
-| --- | ---: | ---: | ---: |
-| Original completo | 12,98 | 100,0 ms | 4 000 000 |
-| Protegidos + fundo 500 mil | 23,44 | 58,2 ms | 1 345 881 |
-| Protegidos + fundo 800 mil | 15,41 | 75,1 ms | 1 568 173 |
+Os números 12,98 / 23,44 / 15,41 FPS foram retirados. A repetição corrigida usa um quaternion real e verifica explicitamente componentes finitas. A repetição corrigida do perfil 500 mil, no mesmo equipamento e viewport 1100×800, com dez segundos de aquecimento e dez de movimento, mediu 8,78 FPS e p95 de 175,1 ms. Foi uma execução posterior à comparação do jardim e não uma comparação simultânea. O teste passou com rotação finita e sem erros. Não atingiu 30 FPS.
 
-O orçamento do fundo é um alvo de LoD, não uma contagem garantida. Os ensaios 500 mil/original foram feitos na mesma execução; 800 mil foi uma execução posterior no mesmo equipamento. Os FPS podem variar no browser interativo. Nenhum atingiu 30 FPS.
-
-Cartazes e pavimento mantêm nitidez na inspeção de P01. Copas e edifícios ficam visivelmente desfocados; subir o fundo para 800 mil piorou a fluidez e não resolveu suficientemente a qualidade. Não há aprovação visual do utilizador. A inspeção não cobre todas as vistas 360° ou todos os pontos dentro do raio de 3 m.
-
-Passaram contagens, carregamento sem erros, movimento frontal/lateral, limite de 3 m, regresso exato a P01, manutenção da câmara na troca de comparação e bloqueio de downloads pesados em UA iPhone. Teste local: `tests/selective.cjs`; auditoria: `tests/partition-p01.py`.
+A inspeção inicial mantém a conclusão visual: cartazes e pavimento nítidos; copas e edifícios desfocados. Não houve aprovação do fundo como qualidade final. O ensaio novo do jardim preserva também a vegetação, sem LoD nos splats retidos.
 
 ## Recorte espacial auditado
 
