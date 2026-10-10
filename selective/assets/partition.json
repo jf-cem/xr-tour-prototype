@@ -1,0 +1,110 @@
+{
+  "sourceSha256": "1f2a2004880ccc62e8a54f5ed63e7ef872f96f46967c44c8a218cf870fe02221",
+  "sourceCount": 4000000,
+  "criticalRegionsWorld": [
+    {
+      "name": "percurso",
+      "min": [
+        -16.0,
+        0.5,
+        -2.0
+      ],
+      "max": [
+        4.0,
+        1.85,
+        2.0
+      ]
+    },
+    {
+      "name": "piso_proximo",
+      "min": [
+        -5.0,
+        0.5,
+        -4.0
+      ],
+      "max": [
+        3.0,
+        1.85,
+        4.0
+      ]
+    },
+    {
+      "name": "cartaz_proximo",
+      "min": [
+        -6.4,
+        0.5,
+        0.6
+      ],
+      "max": [
+        -2.8,
+        4.0,
+        3.4
+      ]
+    },
+    {
+      "name": "cartaz_meio",
+      "min": [
+        -12.4,
+        0.5,
+        -1.3
+      ],
+      "max": [
+        -9.5,
+        3.7,
+        1.3
+      ]
+    },
+    {
+      "name": "cartaz_fundo",
+      "min": [
+        -16.2,
+        0.5,
+        1.6
+      ],
+      "max": [
+        -13.0,
+        3.7,
+        3.8
+      ]
+    },
+    {
+      "name": "banco",
+      "min": [
+        -6.0,
+        0.5,
+        1.5
+      ],
+      "max": [
+        -2.0,
+        2.4,
+        4.0
+      ]
+    }
+  ],
+  "extentGuard": "3 * maximum decoded Gaussian scale (conservative sphere)",
+  "shBands": 3,
+  "counts": {
+    "critical": 847626,
+    "background": 3152374
+  },
+  "disjoint": true,
+  "complete": true,
+  "pixelIdentityVerified": {
+    "critical/means_l.webp": true,
+    "critical/means_u.webp": true,
+    "critical/quats.webp": true,
+    "critical/scales.webp": true,
+    "critical/sh0.webp": true,
+    "critical/shN_labels.webp": true,
+    "background/means_l.webp": true,
+    "background/means_u.webp": true,
+    "background/quats.webp": true,
+    "background/scales.webp": true,
+    "background/sh0.webp": true,
+    "background/shN_labels.webp": true
+  },
+  "bytes": {
+    "critical": 13191991,
+    "background": 44723310
+  }
+}
