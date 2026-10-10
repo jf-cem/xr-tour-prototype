@@ -1,0 +1,76 @@
+{
+  "status": "Initial alignment visually verified at P01, P02, P03 using boards, benches and buildings; floor height verified by raycast. Not survey calibration.",
+  "origin_sketchup_m": [
+    5.615692355105627,
+    76.44565836716178,
+    0
+  ],
+  "stops": [
+    {
+      "id": "P01",
+      "d5_scene": "Tour 01",
+      "source_panorama": "33344Tour 01.png",
+      "position": [
+        8.881784197001252E-16,
+        3.0,
+        -0.0
+      ],
+      "sketchup_m": [
+        5.615692355105628,
+        76.44565836716178,
+        3.0
+      ],
+      "reference_rotation_rad": -0.06645353280760782,
+      "image": "references/P01.jpg"
+    },
+    {
+      "id": "P02",
+      "d5_scene": "Tour 02",
+      "source_panorama": "33344Tour 02.png",
+      "position": [
+        -6.514411563581033,
+        3.0,
+        0.5147905854597639
+      ],
+      "sketchup_m": [
+        -0.8987192084754063,
+        75.93086778170202,
+        3.0
+      ],
+      "reference_rotation_rad": -0.06645353280760782,
+      "image": "references/P02.jpg"
+    },
+    {
+      "id": "P03",
+      "d5_scene": "Tour 03.2",
+      "source_panorama": "33344Tour 03.2.png",
+      "position": [
+        -16.25174302781381,
+        3.0,
+        -0.9424937212023536
+      ],
+      "sketchup_m": [
+        -10.636050672708182,
+        77.38815208836414,
+        3.0
+      ],
+      "reference_rotation_rad": -0.09007720910740805,
+      "image": "references/P03.jpg"
+    }
+  ],
+  "gps": [
+    {
+      "lat": 38.74869721,
+      "lng": -9.20120518
+    },
+    {
+      "lat": 38.74872382,
+      "lng": -9.2012888
+    },
+    {
+      "lat": 38.74873891,
+      "lng": -9.20140854
+    }
+  ],
+  "version": "v1.3.4"
+}
