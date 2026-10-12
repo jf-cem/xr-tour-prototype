@@ -1,12 +1,2 @@
 <!doctype html>
-<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>CEM · XR piloto</title>
-<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/postprocessing/Pass.js":"./vendor/Pass.js"}}</script></head>
-<body><main id="viewport" aria-label="Percurso XR tridimensional"></main>
-<header><strong>CEM · Benfica</strong><span>XR · piloto separado</span><a href="https://jf-cem.github.io/tour-virtual/">Tour atual</a></header>
-<div id="loading" role="status">A preparar a experiência XR…</div>
-<section id="panel"><div class="row" id="stops"><button data-stop="0">P01</button><button data-stop="1">P02</button><button data-stop="2">P03</button><button id="phone">Olhar com telemóvel</button></div>
-<label class="route">Percurso <input id="route" type="range" min="0" max="1000" value="0" aria-label="Posição no percurso"><output id="distance">0,0 m</output></label>
-<div class="row"><button id="back" aria-label="Recuar">← Recuar</button><button id="forward">Avançar →</button><label>Qualidade <select id="quality"><option value="100000">Telemóvel · 100 mil</option><option value="250000">Muito leve</option><option value="500000" selected>Leve</option><option value="1000000">Detalhada</option><option value="original">Original D5 · 4 milhões</option></select></label></div>
-<p id="hint">Arrasta a imagem para olhar à volta. Usa o percurso ou mantém Avançar premido para caminhar.</p>
-<details><summary>Desempenho e opções</summary><div class="row"><label>Altura <select id="height"><option value="3">3 m · panoramas</option><option value="1.7">1,7 m · pedonal</option></select></label><label>Resolução <select id="resolution"><option value="1">Leve</option><option value="1.5">Mais nítida</option><option value="2">Máxima · 2×</option></select></label></div><p id="stats">A carregar…</p><p>Alinhamento D5 em avaliação. Este piloto usa deslocação manual; o GPS continua na tour atual.</p><a href="https://share.d5render.com/user-hub/showreel/shortLink/9x8UGL" target="_blank" rel="noopener">Comparar com a XR D5</a></details></section>
-<script type="module" src="app.js?v=0.3"></script></body></html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CEM · XR 1080p</title><link rel="icon" href="data:,"><meta http-equiv="refresh" content="0;url=1080p/"></head><body><p><a href="1080p/">Abrir a nova XR 1080p</a></p><script>location.replace('./1080p/' + location.search + location.hash);</script></body></html>

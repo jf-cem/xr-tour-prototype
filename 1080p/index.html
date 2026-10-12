@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>CEM · XR 1080p</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="style.css?v=1080p-1"><script src="../vendor/playcanvas-2.23.0.js"></script></head>
+<body><main id="viewport" aria-label="Tour XR de Benfica"><canvas id="canvas"></canvas></main>
+<header><strong>CEM · Benfica</strong><span>XR D5 · 1080p</span><a href="https://jf-cem.github.io/tour-pano/">Panoramas</a></header>
+<div id="loading" role="status"><p id="status">Nova exportação D5 · 15,8 MB</p><button id="start">Abrir XR 1080p</button><button id="retry" hidden>Recarregar</button></div>
+<section id="panel"><div class="row" id="stops"><button data-stop="0" disabled>P01</button><button data-stop="1" disabled>P02</button><button data-stop="2" disabled>P03</button><button id="phone" disabled>Olhar com telemóvel</button></div>
+<label class="route">Percurso <input id="route" type="range" min="0" max="1000" value="0" disabled aria-label="Posição no percurso"><output id="distance">0,0 m</output></label>
+<div class="row"><button id="back" disabled>← Recuar</button><button id="forward" disabled>Avançar →</button><label>Imagem <select id="resolution"><option value="0.75">Leve</option><option value="1" selected>Normal</option><option value="1.5">Mais nítida</option></select></label></div>
+<p id="hint">Abre a XR e arrasta a imagem para olhar. Mantém Avançar ou Recuar premido para caminhar.</p>
+<details><summary>Desempenho e opções</summary><div class="row"><label>Altura <select id="height"><option value="3">3 m · panoramas</option><option value="1.7">1,7 m · pedonal</option></select></label><button id="export">Guardar diagnóstico</button></div><p id="stats">973 259 splats · ficheiro SOG 15,8 MB</p><p>Ensaio da nova XR 1080p. Percurso manual P01–P03; alinhamento em avaliação.</p><p><a href="../index-2k.html">Ensaios anteriores · fonte 2K</a></p></details></section>
+<script src="app.js?v=1080p-1"></script></body></html>

@@ -1,8 +1,33 @@
 # CEM · XR tour prototype
 
+## Ensaio atual — D5 1080p, 12 de outubro de 2026
+
+A entrada principal abre agora https://jf-cem.github.io/xr-tour-prototype/1080p/.
+Carrega em **Abrir XR 1080p**, arrasta para olhar e usa P01–P03, o percurso ou Avançar/Recuar.
+No telemóvel, «Olhar com telemóvel» pede a permissão de sensores quando necessária.
+Se a imagem tiver pouca fluidez, escolhe **Imagem → Leve**.
+
+Fonte: `2109609102809157633.sog.zip`, copiada sem alteração para `1080p/assets/d5-1080p.sog`.
+SHA-256: `d0dc146705a85ba06d6012ae5f4eae763bb74181d1fe02e638c8eab5d5b2e137`.
+15 836 471 bytes, 973 259 splats, SOG v2, SH3. O PLY de 229,7 MB fica nos originais e não é publicado.
+PlayCanvas 2.23.0 com WebGL2 e representação SOG comprimida (`decompress:false`, `unified:false`).
+Sem gerar LOD nem expandir o PLY no browser. Depois do upload libertam-se as fontes das texturas.
+A cena só começa a carregar ao premir Abrir; não se descarregam os assets anteriores de 2K.
+Resolução móvel em píxeis CSS, no máximo 1× e um milhão de píxeis; o DPR do telefone não multiplica a renderização.
+
+Validação local em Chromium: carregamento e imagem P01/P03, percurso de 16,38 m, botões de caminhada,
+arrasto do olhar, resolução Leve, perfil móvel 390×844 com DPR3 sem overflow nem erros.
+O motor reportou cerca de 31,3 MB em texturas no ensaio local; não é a memória total do processo.
+O perfil móvel de Chromium não valida Safari, Firefox ou sensores num telefone real.
+A qualidade visual é inferior à fonte 2K, com desfocagem evidente na vegetação/periferia.
+Em Desempenho e opções, **Guardar diagnóstico** exporta estado, FPS, resolução e perdas de contexto.
+
+Os ensaios anteriores permanecem em [index-2k.html](index-2k.html), [playcanvas/](playcanvas/),
+[selective/](selective/) e [garden/](garden/). As notas seguintes descrevem a versão anterior.
+
 Piloto separado: https://jf-cem.github.io/xr-tour-prototype/
 
-Original D5: https://jf-cem.github.io/xr-tour-prototype/?quality=original
+Original D5 2K: https://jf-cem.github.io/xr-tour-prototype/index-2k.html?quality=original
 
 Escolhe P01, P02 e P03 ou usa o cursor e os botões Avançar/Recuar. Arrasta para olhar, ou ativa Olhar com telemóvel. Este protótipo usa movimento manual; o GPS permanece na tour principal.
 
